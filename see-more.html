@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Books</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-book{
+            background-image: url('books_bg2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .bg-color{
+            background-color: #212121;
+        }
+    </style>
+</head>
+
+<body class="bg-color p-8">
+    <a href="index.html" class="text-black p-1 font-semibold rounded-full bg-gray-400 hover:underline">&larr; Back to Library</a>
+
+    <div class="mt-6 max-w-6xl mx-auto">
+        <h2 class="text-2xl text-white font-bold mb-4">All Available Books</h2>
+        <!-- Add search input -->
+        <input type="text" id="searchInput" placeholder="Search by title..." class="p-2 mb-2 border rounded w-full sm:w-auto"
+            oninput="applyFilters()" />
+
+
+        <!-- Filters -->
+        <div class="flex flex-wrap items-center gap-4 mb-6">
+            <select id="genreFilter" class="p-2 border rounded">
+                <option value="all">All Genres</option>
+            </select>
+            <select id="availabilityFilter" class="p-2 border rounded">
+                <option value="all">All</option>
+                <option value="true">Available</option>
+                <option value="false">Not Available</option>
+            </select>
+            <button onclick="applyFilters()"
+                class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Filter</button>
+            <button onclick="resetFilters()"
+                class="bg-gray-300 text-black px-4 py-2 rounded hover:bg-gray-400">Reset</button>
+        </div>
+
+        <!-- Book Container -->
+        <div id="allBooks" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </div>
+
+    <script>
+        let booksData = [];
+
+        fetch("books.json")
+            .then(res => res.json())
+            .then(books => {
+                booksData = books;
+                populateGenreFilter(books);
+                displayBooks(books);
+            });
+
+        function populateGenreFilter(books) {
+            const genres = [...new Set(books.map(book => book.genre))];
+            const genreSelect = document.getElementById("genreFilter");
+            genres.forEach(genre => {
+                const option = document.createElement("option");
+                option.value = genre;
+                option.textContent = genre;
+                genreSelect.appendChild(option);
+            });
+        }
+
+        function displayBooks(books) {
+            const container = document.getElementById("allBooks");
+            container.innerHTML = "";
+
+            if (books.length === 0) {
+                container.innerHTML = "<p class='col-span-full text-center text-gray-500'>No books match the selected filters.</p>";
+                return;
+            }
+
+            books.forEach(book => {
+                const card = document.createElement("div");
+                card.className = "p-4 bg-white rounded-lg shadow hover:shadow-md transition";
+                card.innerHTML = `
+          <h3 class="font-semibold text-lg">${book.title}</h3>
+          <p class="text-gray-600">Author: ${book.author}</p>
+          <p class=" text-blue-700 px-1
+           py-1 rounded-full hover:bg-blue-200">Genre: ${book.genre}</p>
+          <p class="text-gray-600">Section: ${book.section} | Shelf: ${book.shelf} | Row: ${book.row}</p>
+          <p class="text-sm ${book.available ? 'text-green-600' : 'text-red-600'}">${book.available ? 'Available' : 'Not Available'}</p>
+        `;
+                container.appendChild(card);
+            });
+        }
+
+        function applyFilters() {
+            const genre = document.getElementById("genreFilter").value;
+            const availability = document.getElementById("availabilityFilter").value;
+            const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+
+            const filtered = booksData.filter(book => {
+                const genreMatch = genre === "all" || book.genre === genre;
+                const availabilityMatch = availability === "all" || String(book.available) === availability;
+                const titleMatch = book.title.toLowerCase().includes(searchTerm);
+                return genreMatch && availabilityMatch && titleMatch;
+            });
+
+            displayBooks(filtered);
+        }
+
+        function resetFilters() {
+            document.getElementById("genreFilter").value = "all";
+            document.getElementById("availabilityFilter").value = "all";
+            displayBooks(booksData);
+        }
+    </script>
+</body>
+
+</html>

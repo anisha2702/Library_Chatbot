@@ -1,0 +1,362 @@
+[
+  {
+    "title": "A Promised Land",
+    "author": "Barack Obama",
+    "genre": "Biography",
+    "section": "Biography",
+    "shelf": "B1",
+    "row": "3",
+    "available": true
+  },
+  {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "genre": "Dystopian",
+    "section": "Fiction",
+    "shelf": "C2",
+    "row": "1",
+    "available": true
+  },
+  {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "genre": "Memoir",
+    "section": "Memoir",
+    "shelf": "D1",
+    "row": "2",
+    "available": false
+  },
+  {
+    "title": "Normal People",
+    "author": "Sally Rooney",
+    "genre": "Romance",
+    "section": "Fiction",
+    "shelf": "C3",
+    "row": "2",
+    "available": true
+  },
+  {
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "genre": "History",
+    "section": "History",
+    "shelf": "A1",
+    "row": "1",
+    "available": true
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "genre": "Classic",
+    "section": "Fiction",
+    "shelf": "C1",
+    "row": "3",
+    "available": false
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Classic",
+    "section": "Fiction",
+    "shelf": "A3",
+    "row": "2",
+    "available": true
+  },
+  {
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fantasy",
+    "section": "Fantasy",
+    "shelf": "E1",
+    "row": "1",
+    "available": true
+  },
+  {
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fantasy",
+    "section": "Fantasy",
+    "shelf": "E2",
+    "row": "1",
+    "available": false
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "genre": "Classic",
+    "section": "Fiction",
+    "shelf": "A2",
+    "row": "2",
+    "available": true
+  },
+   {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "genre": "Dystopian",
+    "section": "Fiction",
+    "shelf": "C2",
+    "row": "1",
+    "available": true
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "genre": "Dystopian",
+    "section": "Fiction",
+    "shelf": "C2",
+    "row": "1",
+    "available": false
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "genre": "Classic",
+    "section": "Fiction",
+    "shelf": "A1",
+    "row": "1",
+    "available": true
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Classic",
+    "section": "Fiction",
+    "shelf": "A1",
+    "row": "2",
+    "available": true
+  },
+  {
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "genre": "Adventure",
+    "section": "Fiction",
+    "shelf": "B3",
+    "row": "1",
+    "available": false
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "genre": "Romance",
+    "section": "Fiction",
+    "shelf": "B1",
+    "row": "2",
+    "available": true
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "genre": "Classic",
+    "section": "Fiction",
+    "shelf": "A3",
+    "row": "3",
+    "available": false
+  },
+  {
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fantasy",
+    "section": "Fiction",
+    "shelf": "D1",
+    "row": "1",
+    "available": true
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "genre": "Fantasy",
+    "section": "Fiction",
+    "shelf": "D2",
+    "row": "1",
+    "available": true
+  },
+  {
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fantasy",
+    "section": "Fiction",
+    "shelf": "D3",
+    "row": "1",
+    "available": false
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "genre": "Philosophical",
+    "section": "Fiction",
+    "shelf": "E1",
+    "row": "2",
+    "available": true
+  },
+  {
+    "title": "Animal Farm",
+    "author": "George Orwell",
+    "genre": "Satire",
+    "section": "Fiction",
+    "shelf": "C1",
+    "row": "2",
+    "available": true
+  },
+  {
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "genre": "Romance",
+    "section": "Fiction",
+    "shelf": "B1",
+    "row": "3",
+    "available": false
+  },
+  {
+    "title": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "genre": "Romance",
+    "section": "Fiction",
+    "shelf": "B2",
+    "row": "3",
+    "available": true
+  },
+  {
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "genre": "Horror",
+    "section": "Fiction",
+    "shelf": "C4",
+    "row": "1",
+    "available": true
+  },
+  {
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "genre": "Horror",
+    "section": "Fiction",
+    "shelf": "C4",
+    "row": "2",
+    "available": false
+  },
+  {
+    "title": "The Book Thief",
+    "author": "Markus Zusak",
+    "genre": "Historical",
+    "section": "Fiction",
+    "shelf": "F1",
+    "row": "1",
+    "available": true
+  },
+  {
+    "title": "A Tale of Two Cities",
+    "author": "Charles Dickens",
+    "genre": "Historical",
+    "section": "Fiction",
+    "shelf": "F1",
+    "row": "2",
+    "available": false
+  },
+  {
+    "title": "The Fault in Our Stars",
+    "author": "John Green",
+    "genre": "Young Adult",
+    "section": "Fiction",
+    "shelf": "G1",
+    "row": "1",
+    "available": true
+  },
+  {
+    "title": "Looking for Alaska",
+    "author": "John Green",
+    "genre": "Young Adult",
+    "section": "Fiction",
+    "shelf": "G1",
+    "row": "2",
+    "available": true
+  },
+  {
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "genre": "Non-fiction",
+    "section": "History",
+    "shelf": "H1",
+    "row": "1",
+    "available": true
+  },
+  {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "genre": "Memoir",
+    "section": "Non-fiction",
+    "shelf": "H2",
+    "row": "1",
+    "available": true
+  },
+  {
+    "title": "Becoming",
+    "author": "Michelle Obama",
+    "genre": "Memoir",
+    "section": "Non-fiction",
+    "shelf": "H2",
+    "row": "2",
+    "available": false
+  },
+  {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "genre": "Self-help",
+    "section": "Non-fiction",
+    "shelf": "I1",
+    "row": "1",
+    "available": true
+  },
+  {
+    "title": "The Power of Habit",
+    "author": "Charles Duhigg",
+    "genre": "Self-help",
+    "section": "Non-fiction",
+    "shelf": "I1",
+    "row": "2",
+    "available": false
+  },
+  {
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "genre": "Self-help",
+    "section": "Non-fiction",
+    "shelf": "I2",
+    "row": "1",
+    "available": true
+  },
+  {
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "genre": "Psychology",
+    "section": "Non-fiction",
+    "shelf": "J1",
+    "row": "1",
+    "available": true
+  },
+  {
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "genre": "Self-help",
+    "section": "Non-fiction",
+    "shelf": "I2",
+    "row": "2",
+    "available": false
+  },
+  {
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "genre": "Post-apocalyptic",
+    "section": "Fiction",
+    "shelf": "K1",
+    "row": "1",
+    "available": true
+  },
+  {
+    "title": "The Handmaid's Tale",
+    "author": "Margaret Atwood",
+    "genre": "Dystopian",
+    "section": "Fiction",
+    "shelf": "C2",
+    "row": "2",
+    "available": true
+  }
+]
