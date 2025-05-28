@@ -2,7 +2,8 @@ let books = [];
 
 fetch("books.json")
   .then((res) => res.json())
-  .then((books) => {
+  .then((data) => {
+    books=data;
     const limitedBooks = books.slice(0, 6); // Display first 6 books
     const bookList = document.getElementById("bookList");
 
@@ -25,6 +26,10 @@ fetch("books.json")
 function showRecommendation() {
   const list = document.getElementById('bookList');
   const availableBooks = books.filter(book => book.available);
+  if (availableBooks.length === 0) {
+    alert("Sorry, no available books right now.");
+    return;
+  }
   const random = availableBooks[Math.floor(Math.random() * availableBooks.length)];
   alert(`📚 Try reading "${random.title}" by ${random.author} - Available at Section: ${random.section}, Shelf: ${random.shelf}, Row: ${random.row}`);
 }
