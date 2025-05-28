@@ -82,7 +82,7 @@
 
             books.forEach(book => {
                 const card = document.createElement("div");
-                card.className = "p-4 bg-white rounded-lg shadow hover:shadow-md transition";
+                card.className = "p-4 bg-white rounded-lg transition-transform duration-300 hover:scale-110 shadow hover:shadow-md transition";
                 card.innerHTML = `
           <h3 class="font-semibold text-lg">${book.title}</h3>
           <p class="text-gray-600">Author: ${book.author}</p>
